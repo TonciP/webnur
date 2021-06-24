@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<app-config>
+	<db-config>
+		<db-engine>PostgreSQL</db-engine>
+		<db-host>localhost</db-host>
+		<db-port>5432</db-port>
+		<db-instance></db-instance>
+		<db-name>tiendaweb</db-name>
+		<db-user>postgres</db-user>
+		<db-password>root</db-password>
+	</db-config>
+</app-config>

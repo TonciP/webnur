@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tonci Pinto">
+    
+    <link rel="shortcut icon" href="css/img/tienda.jpg">
+    <link rel="stylesheet" href="css/principal/principal.css">
+    <link rel="stylesheet" href="css/principal/banner.css">
+    <link rel="stylesheet" href="css/principal/seccion.css">
+    <link rel="stylesheet" href="css/principal/footer.css">
+    <link rel="stylesheet" href="css/Lora.css">
+    <title>Tiendita</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content_header">
+            <header>
+
+                <h1>Tiendita</h1>
+                <div class="h-header">
+                    <span id="h-menu">
+                        <i class="fa fa-bars"></i>
+                        <label for="menu">Menu</label>
+                        <input type="checkbox" id="menu" name="menu">
+                    </span>
+                    <div class="h-nav">
+                        <span id="h_buscador">
+                            <span id="button-search">
+                                <input id="btnBuscador" name="btnBuscador" type="search">
+                                <label for="btnBuscador" >
+                                    <i class="fa fa-search" aria-hidden="true"></i>   
+                                </label>
+                            </span>
+                        </span>
+                        <span id="sesion">
+                            <a href="login.html">
+                                <i class="fa fa-user fa-2x">     
+                                </i>
+                                Iniciar Sesion o Registrarse
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+        <div class="banner">
+                <img id="img_banner" src="css/img/tienda.jpg" alt="">
+                <div class="conten_nav">
+                    <span class="b-categoria">
+                        <label style="margin: 0px 10px;" for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria">
+                            <option value="inmueble">Inmueble</option>
+                            <option value="electronico">Electronico</option>
+                            <option value="ropa">Ropa</option>
+                        </select>
+                    </span>
+                   
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#">Favoritos</a>
+                            </li>
+                            <li>
+                                <a href="#">Ofertas</a>
+                            </li>
+                            <li style="display: none;">
+                                <a href="template/Add_articulo.html">Agregar</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conten-description">
+                    <div>
+                        <h3>¿Que somos?</h3>
+                        <p>
+                            Somos una tienda virtual donde usted podra ver y comprar articulos electronicos ropa etc,
+                            tambien podra registrarse para asi tener la posibilidad de agregar su articulo a la tienda virtual 
+                        </p>
+                        <h3>¿Que puedes hacer?</h3>
+                        <p>
+                            Aqui podras hacer tus compras virtuales y tambien tenemos la opcion de registro
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="seccion">
+            <!--section>
+                <div class="item-section">
+                    <img class="imgsection"  src="css/img/mueble1.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+                </div>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble2.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+
+                </div>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble3.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+
+                </div>
+            </section>
+            <!--section>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble4.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+                </div>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble5.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+                </div>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble6.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+                </div>
+            </section>
+            <section>
+                <div class="item-section">
+                    <img class="imgsection" src="css/img/mueble7.jpg" alt="mueble">
+                    <p>Titulo</p>
+                    <p>Marca</p>
+                    <p>Descripcion</p>
+                    <p>Precio</p>
+
+                </div>
+            </section-->
+        </div>
+    </div>
+    <button class="open-button" onclick="openForm()">Login</button>
+
+    <div class="form-popup" id="myForm">
+    <form onsubmit="verificarlogin()" class="form-container">
+        <h1>Login</h1>
+
+        <label for="txtuser"><b>Email</b></label>
+        <input id="txtuser"  type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="txtpassword"><b>Password</b></label>
+        <input id="txtpassword"  type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://www.facebook.com/tonci.pintocuellar.908"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tonci-pinto-b914b91a5"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/TonciP/Web_I.git"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Tiendita.com &copy; 2021</p>
+        </div>
+
+    </footer>
+    	<!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+        <!-- DATATABLES -->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+        </script>
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+        </script>
+    
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+
+        <script src="js/awesome.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+</html>

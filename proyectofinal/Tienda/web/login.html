@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Tonci Pinto">
+
+    <link rel="stylesheet" href="css/principal/principal.css">
+    <link rel="stylesheet" href="css/Lora.css">
+    <link rel="stylesheet" href="css/login/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="content-login">
+            <div class="content-input">
+                <form>
+
+                    <span id="user">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input id="txtuser" type="text" placeholder="User">
+                    <input id="txtpassword" type="text" placeholder="Password">
+
+                    <div class="alert alert-danger" id="msg-error-login" style="display: none" role="alert"></div>
+
+                    <input onclick="verificarlogin()" type="button" value="Login">
+                    <p class="mt-5 mb-3 text-muted">¿No tiene una cuenta? <a href="register.html">Registrese aquí</a></p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <!-- DATATABLES -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+    </script>
+
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/awesome.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

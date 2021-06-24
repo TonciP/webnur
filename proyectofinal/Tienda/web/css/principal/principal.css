@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+}
+*{
+    font-family: 'Lora';
+}
+.main{
+    background: white;
+}
+.content_header{
+    display: block;
+}
+header{
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    background:url("../img/mueble1.jpg");
+    align-items: center;
+    color: black;
+}
+
+.h-header{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(156, 97, 65);
+    height: max-content;
+}
+.h-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+#sesion a p{
+    display: none;
+}
+#h-menu{
+    margin: 0px 20px;
+}
+.h-nav,#h-menu{
+    align-items: center;
+}
+#menu{
+    display: none;
+}
+#user-sesion{
+    display: none;
+}
+#sesion{
+    margin: 0px 5px;
+    font-size: 10px;
+}
+#sesion a {
+    text-decoration: none;
+    color: black;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* el popup del formulario - hidden estara default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* añado estilo al formulario contenido */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* cuando el input este focus */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* añado stylo al boton sumit del login*/
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Aañado el color rojo al boton cancel */
+.form-container .cancel {
+  background-color: red;
+}
+/* agrego el color red al boton edit */
+.form-container .edit {
+    background-color: cornflowerblue;
+  }
+
+/* añado efecto al boton */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@media(min-width:768px){
+    #h-menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main{
+        margin:0px auto;
+        background: white;
+    }
+    .h-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+    header h1{
+        margin: 0px;
+    }
+
+    #sesion a i{
+        margin: 0px 10px;
+        color: black;
+    }
+    #sesion a{
+        display: flex;
+        font-size: 15px;
+    }
+    #sesion a{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    .h-nav{
+        width: max-content;
+    }
+}
+@media(min-width:992px){
+    header{
+        padding: 0px 30px;
+    }
+}
+/*body{
+    background: black;
+}
+.main{
+    width: 1200px;
+    margin:0px auto;
+    background: white;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background:cornflowerblue;
+    align-items: center;
+}
+header h1{
+    margin: 0px;
+}
+#btnBuscador{
+    width: 500px;
+}
+#h_buscador{
+    display: flex;
+    width: 600px;
+    height: 30px;
+
+}
+#sesion a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sesion a i{
+    margin: 0px 10px;
+}*/

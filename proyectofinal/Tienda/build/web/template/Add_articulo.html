@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tonci Pinto">
+    
+    <link rel="shortcut icon" href="../css/img/tienda.jpg">
+
+    <link rel="stylesheet" href="../css/aticulos/add.css">
+    <link rel="stylesheet" href="../css/principal/principal.css">
+    <link rel="stylesheet" href="../css/Lora.css">
+    <title>Agregar Articulo</title>
+</head>
+<body>
+    <div class="conten-form">
+        <form>
+            <h1>Articulo</h1>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo"><br>
+            <label for="marca">Marca</label>
+            <input type="text" id="marca"><br>
+            <label for="precio">Precio</label>
+            <input type="text" id="precio"><br>
+            <label for="descripcion">Descripcion</label>
+            <input type="text" id="descripcion"><br>
+
+            <input type="file" id="imagen">
+            <label for="imagen">Imagen</label><br>
+
+            <div id="error" style="display: none;">
+                <p>Tiene que introducir todos los campos correctamente</p>
+            </div>
+
+            <input onclick="validarFormulario()" type="submit" value="Guardar">
+            <input onclick="cancelar()" type="button" value="Cancelar">
+        </form>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <!-- DATATABLES -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+    </script>
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/awesome.js"></script>
+
+    <script src="../js/addarticulo.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    background-image: url("../img/logo.jpg");
+}
+main{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.content-login{
+    display: flex;
+    justify-content: center;
+    height: 768px;
+    align-items: center;
+
+}
+.content-input{
+    display: block;
+    width: 400px;
+    height: max-content;
+    border: solid;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.content-input input[type = "text"]{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-input input[type = "button"]{
+    margin-top: 10px;
+
+}
+.content-input input[type = "submit"]{
+    margin-top: 10px;
+}
+#user i{
+    font-size: 74px;
+}
+.alert .alert-danger{
+    color: red;
+}

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Padauk';
+    src: url('fonts/Padauk-Regular.eot');
+    src: local('Padauk Regular'), local('Padauk-Regular'),
+        url('fonts/Padauk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Padauk-Regular.woff2') format('woff2'),
+        url('fonts/Padauk-Regular.woff') format('woff'),
+        url('fonts/Padauk-Regular.ttf') format('truetype'),
+        url('fonts/Padauk-Regular.svg#Padauk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Padauk';
+    src: url('fonts/Padauk-Bold.eot');
+    src: local('Padauk Bold'), local('Padauk-Bold'),
+        url('fonts/Padauk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Padauk-Bold.woff2') format('woff2'),
+        url('fonts/Padauk-Bold.woff') format('woff'),
+        url('fonts/Padauk-Bold.ttf') format('truetype'),
+        url('fonts/Padauk-Bold.svg#Padauk-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
